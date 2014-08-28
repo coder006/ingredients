@@ -1,22 +1,19 @@
-Ingredients
------------
+## Ingredients
+
 
 An Android application which suggests dishes based on provided ingredients.
 
 
 
-Design
-~~~~~~
+### Design
 
 
 
-Machine Learning
-~~~~~~~~~~~~~~~~
+### Machine Learning
 
 
 
-Scraping and Server
-~~~~~~~~~~~~~~~~~~~
+### Scraping and Server
 
 * [Supercook](http://www.supercook.com)
 > Ingredients based search engine.
@@ -31,6 +28,6 @@ Scraping and Server
 > Ingredients based search engine.
 
 
-Possible Names
-~~~~~~~~~~~~~~
- * Ingredients
+### Possible Names
+
+* Ingredients
