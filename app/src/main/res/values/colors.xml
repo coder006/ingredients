@@ -4,6 +4,11 @@
     <color name="black">#000000</color>
     <color name="silver">#AAAAAA</color>
     <color name="grey">#666666</color>
-    <color name="red">#ef2211</color>
-    <color name="blue">#1144ee</color>
+    <color name="red">#EF2211</color>
+    <color name="blue">#1144EE</color>
+    <color name="green">#00bb00</color>
+
+    <color name="dark_orange">#FF6D02</color>
+    <color name="light_orange">#FFA501</color>
+    <color name="github_green">#71CA51</color>
 </resources>

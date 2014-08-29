@@ -5,9 +5,11 @@
 
 package com.paranoidgems.ingredients;
 
+import android.app.ActionBar;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -68,6 +70,13 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
         // Set screen orientation to portrait
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        // Styling ActionBar
+        ActionBar bar = getActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(
+                getResources().getColor(R.color.dark_orange)
+        ));
+
         this.mTitle = this.mDrawerTitle = getTitle();
         this.navMenuTitles = getResources().getStringArray(
                 R.array.nav_drawer_items);
