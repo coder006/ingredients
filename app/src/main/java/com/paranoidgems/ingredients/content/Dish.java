@@ -3,7 +3,9 @@
  * http://www.paranoidgems.com
  */
 
-package com.paranoidgems.ingredients;
+package com.paranoidgems.ingredients.content;
+
+import android.content.Context;
 
 /**
  * This class represents a dish data structure.
@@ -16,7 +18,7 @@ public class Dish {
     private int calorificValue;
     private int likes;
     private int numberOfIngredients;
-    private Ingredient [] ingredients;
+    private Ingredient[] ingredients;
 
     /**
      * Public constructor to instantiate a dish.
@@ -26,7 +28,8 @@ public class Dish {
      * @param calorificValue
      * @param ingredients
      */
-    public Dish(String name,
+    public Dish(Context ctx,
+                String name,
                 int numberOfIngredients,
                 int calorificValue,
                 int likes,
