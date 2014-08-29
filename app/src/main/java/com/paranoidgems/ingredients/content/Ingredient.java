@@ -3,7 +3,7 @@
  * http://www.paranoidgems.com
  */
 
-package com.paranoidgems.ingredients;
+package com.paranoidgems.ingredients.content;
 
 
 /**
