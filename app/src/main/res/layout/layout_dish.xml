@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dish_card_height"
+    android:padding="@dimen/simple_margin"
+    android:layout_marginBottom="@dimen/simple_margin"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_shape">
+
+    <ImageView
+        android:layout_width="@dimen/dish_small_icon_size"
+        android:layout_height="@dimen/dish_small_icon_size"
+        android:id="@+id/imgDish"
+        android:layout_marginRight="@dimen/simple_margin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Favorite Cuisine"
+        android:textColor="@color/green_text_color"
+        android:id="@+id/txtDishName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgDish" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Missing Cheese, Oil and Potato"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textColor="@color/grey"
+        android:id="@+id/txtMissingIngredients"
+        android:layout_below="@+id/txtDishName"
+        android:layout_toEndOf="@+id/imgDish" />
+
+</RelativeLayout>

@@ -3,11 +3,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="@dimen/simple_margin"
+    android:padding="@dimen/small_margin"
     android:background="@color/light_silver"
-    android:fillViewport="false"
+    android:fillViewport="true"
     android:id="@+id/container_fragment_search">
     <LinearLayout
+        android:id="@+id/sub_container_fragment_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -17,13 +18,12 @@
             android:padding="@dimen/simple_margin"
             android:layout_marginBottom="@dimen/simple_margin"
             android:orientation="vertical"
-            android:background="@color/white">
+            android:background="@drawable/rounded_shape">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="@dimen/simple_margin"
                 android:background="@color/light_silver"
-                android:text="Search Box"
                 android:padding="@dimen/small_margin"
                 android:id="@+id/txtSearchBox" />
             <ListView
@@ -35,6 +35,7 @@
 
             </ListView>
         </LinearLayout>
+        <!--
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dish_card_height"
@@ -75,5 +76,7 @@
                 android:layout_toEndOf="@+id/imgDish" />
 
         </RelativeLayout>
+        -->
+
     </LinearLayout>
 </ScrollView>
