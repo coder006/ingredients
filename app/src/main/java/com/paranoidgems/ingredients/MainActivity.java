@@ -74,7 +74,7 @@ public class MainActivity extends FragmentActivity {
         // Styling ActionBar
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(
-                getResources().getColor(R.color.dark_orange)
+                getResources().getColor(R.color.pink)
         ));
 
         this.mTitle = this.mDrawerTitle = getTitle();
@@ -108,7 +108,7 @@ public class MainActivity extends FragmentActivity {
         getActionBar().setHomeButtonEnabled(true);
 
         this.mDrawerToggle = new ActionBarDrawerToggle(this,
-                this.mDrawerLayout, R.drawable.ic_drawer, // nav menu toggle
+                this.mDrawerLayout, R.drawable.ic_navigation_drawer, // nav menu toggle
                 // icon
                 R.string.app_name, // nav drawer open - description for
                 // accessibility

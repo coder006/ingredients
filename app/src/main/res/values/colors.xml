@@ -3,6 +3,7 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="silver">#AAAAAA</color>
+    <color name="light_silver">#DDDDDD</color>
     <color name="grey">#666666</color>
     <color name="red">#EF2211</color>
     <color name="blue">#1144EE</color>
@@ -11,4 +12,8 @@
     <color name="dark_orange">#FF6D02</color>
     <color name="light_orange">#FFA501</color>
     <color name="github_green">#71CA51</color>
+    <color name="pink">#EE2C47</color>
+    <color name="red_pink">#FF2C47</color>
+
+    <color name="green_text_color">#004400</color>
 </resources>

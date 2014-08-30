@@ -1,18 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@color/white" >
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/simple_margin"
+    android:background="@color/light_silver"
+    android:fillViewport="false"
+    android:id="@+id/container_fragment_search">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center" >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_box_height"
+            android:padding="@dimen/simple_margin"
+            android:layout_marginBottom="@dimen/simple_margin"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/simple_margin"
+                android:background="@color/light_silver"
+                android:text="Search Box"
+                android:padding="@dimen/small_margin"
+                android:id="@+id/txtSearchBox" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_silver"
+                android:choiceMode="none"
+                android:id="@+id/lstIngredients">
 
+            </ListView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dish_card_height"
+            android:padding="@dimen/simple_margin"
+            android:layout_marginBottom="@dimen/simple_margin"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:id="@+id/sub_container_fragment_search">
+
+            <ImageView
+                android:layout_width="@dimen/dish_small_size"
+                android:layout_height="@dimen/dish_small_size"
+                android:id="@+id/imgDish"
+                android:background="@color/light_silver"
+                android:layout_marginRight="@dimen/simple_margin"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cheese Aloo Chokha"
+                android:textColor="@color/green_text_color"
+                android:id="@+id/txtDishName"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imgDish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Missing Cheese, Oil and Potato"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/grey"
+                android:id="@+id/textView"
+                android:layout_below="@+id/txtDishName"
+                android:layout_toEndOf="@+id/imgDish" />
+
+        </RelativeLayout>
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
